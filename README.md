@@ -51,8 +51,8 @@ This website showcases JOLOJ Water Systems' services, projects, and expertise in
 
 1. Clone the repository:
    \`\`\`bash
-   git clone https://github.com/your-username/joloj-water-system-business-website.git
-   cd joloj-water-system-business-website
+   git clone https://github.com/your-username/joloj-water-systems.git
+   cd joloj-water-systems
    \`\`\`
 
 2. Install dependencies:

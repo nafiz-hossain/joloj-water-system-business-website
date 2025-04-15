@@ -24,7 +24,7 @@ export default function ClientsSection() {
               <div className="bg-white p-4 rounded-lg flex items-center justify-center h-24 transform transition-all duration-300 hover:shadow-md hover:-translate-y-1">
                 <div className="relative h-16 w-full">
                   <Image
-                    src="/placeholder.svg?height=100&width=150"
+                    src={`/placeholder.svg?height=100&width=150&text=Client+${index + 1}`}
                     alt={`Client ${index + 1}`}
                     fill
                     className="object-contain"

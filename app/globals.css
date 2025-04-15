@@ -99,3 +99,8 @@ html {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+/* Water background gradient for Why Choose section */
+.water-gradient {
+  background: linear-gradient(to bottom, #4fc3f7 0%, #0288d1 100%);
+}

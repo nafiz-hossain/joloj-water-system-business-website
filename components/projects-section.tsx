@@ -3,12 +3,36 @@ import AnimatedSection from "./animated-section"
 
 export default function ProjectsSection() {
   const projects = [
-    { title: "Industrial RO Plant", location: "Dhaka, Bangladesh" },
-    { title: "Commercial Purification System", location: "Chittagong, Bangladesh" },
-    { title: "Textile Industry ETP", location: "Narayanganj, Bangladesh" },
-    { title: "Residential Complex STP", location: "Sylhet, Bangladesh" },
-    { title: "Community Drinking Water Plant", location: "Khulna, Bangladesh" },
-    { title: "Hospital Iron Removal Plant", location: "Rajshahi, Bangladesh" },
+    {
+      title: "Industrial RO Plant",
+      location: "Dhaka, Bangladesh",
+      image: "/placeholder.svg?height=300&width=400&text=Industrial+RO+Plant",
+    },
+    {
+      title: "Commercial Purification System",
+      location: "Chittagong, Bangladesh",
+      image: "/placeholder.svg?height=300&width=400&text=Commercial+Purification",
+    },
+    {
+      title: "Textile Industry ETP",
+      location: "Narayanganj, Bangladesh",
+      image: "/placeholder.svg?height=300&width=400&text=Textile+ETP",
+    },
+    {
+      title: "Residential Complex STP",
+      location: "Sylhet, Bangladesh",
+      image: "/placeholder.svg?height=300&width=400&text=Residential+STP",
+    },
+    {
+      title: "Community Drinking Water Plant",
+      location: "Khulna, Bangladesh",
+      image: "/placeholder.svg?height=300&width=400&text=Community+Water+Plant",
+    },
+    {
+      title: "Hospital Iron Removal Plant",
+      location: "Rajshahi, Bangladesh",
+      image: "/placeholder.svg?height=300&width=400&text=Hospital+IRP",
+    },
   ]
 
   return (
@@ -29,7 +53,7 @@ export default function ProjectsSection() {
               <div className="overflow-hidden rounded-lg group">
                 <div className="relative h-64 overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src={project.image || "/placeholder.svg"}
                     alt={project.title}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"

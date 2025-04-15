@@ -1,0 +1,43 @@
+/public/images/
+  /hero/
+    - hero-water-plant.jpg
+    - water-treatment-facility.jpg
+  /about/
+    - facility.jpg
+    - team.jpg
+  /services/
+    - drinking-water.jpg
+    - ro-plant.jpg
+    - iron-removal.jpg
+    - water-softener.jpg
+    - demineralized.jpg
+    - deionized.jpg
+    - salt-removal.jpg
+    - bottle-filling.jpg
+    - battery-water.jpg
+    - dialysis-water.jpg
+    - etp.jpg
+    - stp.jpg
+    - zero-liquid.jpg
+    - portable-stp.jpg
+    - cad-design.jpg
+    - 3d-printing.jpg
+    - cnc-machining.jpg
+    - mold-die.jpg
+    - injection-molding.jpg
+    - chemicals.jpg
+  /projects/
+    - project1.jpg
+    - project2.jpg
+    - project3.jpg
+    - project4.jpg
+    - project5.jpg
+    - project6.jpg
+  /why-choose/
+    - global-sourcing.jpg
+    - single-source.jpg
+    - oem-odm.jpg
+    - manufacturing.jpg
+  /backgrounds/
+    - water-bg.jpg
+    - blue-gradient.jpg

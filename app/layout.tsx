@@ -11,6 +11,7 @@ export const metadata = {
   title: "JOLOJ Water Systems - Water & Wastewater Treatment Solutions",
   description:
     "Leading solution provider in Bangladesh for environment, water & waste water treatment with over 10 years of experience.",
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -30,3 +31,6 @@ export default function RootLayout({
     </html>
   )
 }
+
+
+import './globals.css'
