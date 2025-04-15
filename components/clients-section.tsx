@@ -14,18 +14,33 @@ export default function ClientsSection() {
           </div>
         </AnimatedSection>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-          {Array.from({ length: 12 }).map((_, index) => (
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+          {/* First client with actual image */}
+          <AnimatedSection delay={100} direction="left">
+            <div className="bg-white p-4 rounded-lg flex items-center justify-center h-24 transform transition-all duration-300 hover:shadow-md hover:-translate-y-1">
+              <div className="relative h-16 w-full">
+                <Image
+                  src="/images/clients/Government_Seal_of_Bangladesh.svg"
+                  alt="Government of Bangladesh"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Remaining clients with placeholders */}
+          {Array.from({ length: 5 }).map((_, index) => (
             <AnimatedSection
               key={index}
-              delay={100 * index}
+              delay={100 * (index + 1)}
               direction={index % 3 === 0 ? "left" : index % 3 === 1 ? "up" : "right"}
             >
               <div className="bg-white p-4 rounded-lg flex items-center justify-center h-24 transform transition-all duration-300 hover:shadow-md hover:-translate-y-1">
                 <div className="relative h-16 w-full">
                   <Image
-                    src={`/placeholder.svg?height=100&width=150&text=Client+${index + 1}`}
-                    alt={`Client ${index + 1}`}
+                    src={`/placeholder.svg?height=100&width=150&text=Client+${index + 2}`}
+                    alt={`Client ${index + 2}`}
                     fill
                     className="object-contain"
                   />
