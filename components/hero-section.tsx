@@ -42,7 +42,7 @@ export default function HeroSection() {
           <AnimatedSection direction="right" delay={300}>
             <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-lg transform transition-transform duration-500 hover:scale-[1.02]">
               <Image
-                src="/placeholder.svg?height=400&width=600&text=Water+Treatment+Facility"
+                src="images/Front/front-1.jpg"
                 alt="JOLOJ Water Treatment Plant"
                 fill
                 className="object-cover"

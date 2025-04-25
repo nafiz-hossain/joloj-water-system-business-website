@@ -6,32 +6,32 @@ export default function ProjectsSection() {
     {
       title: "Industrial RO Plant",
       location: "Dhaka, Bangladesh",
-      image: "/placeholder.svg?height=300&width=400&text=Industrial+RO+Plant",
+      image: "images/projects/93.jpg",
     },
     {
       title: "Commercial Purification System",
       location: "Chittagong, Bangladesh",
-      image: "/placeholder.svg?height=300&width=400&text=Commercial+Purification",
+      image: "images/projects/94.jpg",
     },
     {
       title: "Textile Industry ETP",
       location: "Narayanganj, Bangladesh",
-      image: "/placeholder.svg?height=300&width=400&text=Textile+ETP",
+      image: "images/projects/95.jpg",
     },
     {
       title: "Residential Complex STP",
       location: "Sylhet, Bangladesh",
-      image: "/placeholder.svg?height=300&width=400&text=Residential+STP",
+      image: "images/projects/96.jpg",
     },
     {
       title: "Community Drinking Water Plant",
       location: "Khulna, Bangladesh",
-      image: "/placeholder.svg?height=300&width=400&text=Community+Water+Plant",
+      image: "images/projects/97.jpg",
     },
     {
       title: "Hospital Iron Removal Plant",
       location: "Rajshahi, Bangladesh",
-      image: "/placeholder.svg?height=300&width=400&text=Hospital+IRP",
+      image: "images/projects/98.jpg",
     },
   ]
 
@@ -61,13 +61,13 @@ export default function ProjectsSection() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                     <div className="p-4 text-white w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                       <h3 className="font-semibold text-lg">{project.title}</h3>
-                      <p className="text-sky-100">{project.location}</p>
+                      {/* <p className="text-sky-100">{project.location}</p> */}
                     </div>
                   </div>
                 </div>
                 <div className="p-4 bg-sky-50">
                   <h3 className="font-semibold text-lg">{project.title}</h3>
-                  <p className="text-muted-foreground">{project.location}</p>
+                  {/* <p className="text-muted-foreground">{project.location}</p> */}
                 </div>
               </div>
             </AnimatedSection>

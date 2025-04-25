@@ -45,15 +45,13 @@ export default function WhyChooseSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((feature, index) => (
             <AnimatedSection key={feature.title} delay={index * 100} direction={index % 2 === 0 ? "left" : "right"}>
-              <Card className="overflow-hidden border-none shadow-md h-full bg-gradient-to-b from-sky-100 to-sky-200">
-                <div className="relative">
-                  <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
-                    <div className="w-16 h-16 rounded-full bg-sky-700 flex items-center justify-center shadow-lg">
-                      {feature.icon}
-                    </div>
+              <Card className="relative pt-12 overflow-visible border-none shadow-md h-full bg-gradient-to-b from-sky-100 to-sky-200">
+                <div className="absolute -top-2 left-1/2 transform -translate-x-1/2">
+                  <div className="w-16 h-16 rounded-full bg-sky-700 flex items-center justify-center shadow-lg">
+                    {feature.icon}
                   </div>
                 </div>
-                <CardHeader className="pt-12 pb-2 text-center">
+                <CardHeader className="pb-2 text-center">
                   <CardTitle className="text-xl font-bold">{feature.title}</CardTitle>
                   <div className="w-12 h-0.5 bg-gray-800 mx-auto mt-1"></div>
                 </CardHeader>

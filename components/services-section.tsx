@@ -20,64 +20,58 @@ export default function ServicesSection() {
       {
         title: "Household & Domestic Water Purifier",
         description: "Compact and efficient water purifiers for home use, ensuring clean and safe drinking water.",
-        image: "/placeholder.svg?height=200&width=300&text=Domestic+Water+Purifier",
-      },
+        image: "images/services/drinking-water-purifier/drinking-water-purifier-1.png",      },
       {
         title: "Central Drinking Water Purifier",
         description: "Centralized water purification systems for buildings, offices, and commercial spaces.",
-        image: "/placeholder.svg?height=200&width=300&text=Central+Water+Purifier",
-      },
-      {
-        title: "Spare Parts & Components",
-        description: "Quality spare parts including PP Cartridge Filters, Alkaline Filters, RO Membranes, and more.",
-        image: "/placeholder.svg?height=200&width=300&text=Water+Purifier+Parts",
-      },
+        image: "images/services/drinking-water-purifier/Central-drinking-water.png",
+      }
     ],
     wtp: [
       {
         title: "Reverse Osmosis (RO) Plant",
         description: "Advanced RO systems for removing contaminants and providing pure water for various applications.",
-        image: "/placeholder.svg?height=200&width=300&text=RO+Plant",
+        image: "images/services/water-treatment-plant/02 iRO tank & tap.png",
       },
       {
         title: "Iron Removal Plant (IRP)",
         description: "Specialized systems for removing iron and related contaminants from water sources.",
-        image: "/placeholder.svg?height=200&width=300&text=Iron+Removal+Plant",
+        image: "images/services/water-treatment-plant/Iron-Removal-Plant.webp",
       },
       {
         title: "Soft Water Plant (SF)",
         description: "Systems designed to remove hardness from water, making it suitable for various applications.",
-        image: "/placeholder.svg?height=200&width=300&text=Soft+Water+Plant",
+        image: "images/services/water-treatment-plant/frp-water-softening-plant.png",
       },
       {
         title: "Demineralized Plant (DM)",
         description: "Industrial-grade water purification systems removing mineral ions for specialized applications.",
-        image: "/placeholder.svg?height=200&width=300&text=Demineralized+Plant",
+        image: "images/services/drinking-water-purifier/Upscaled-2X-Demineralization.png",
       },
       {
         title: "Deionized Plant (DI)",
         description: "Advanced systems that produce ultra-pure water by removing all ionized minerals and salts.",
-        image: "/placeholder.svg?height=200&width=300&text=Deionized+Plant",
+        image: "images/services/water-treatment-plant/Upscaled-2X-Ionized water treatment plant.jpeg",
       },
       {
         title: "Salinity or Salt Removal Plant",
         description: "Specialized systems for removing salt and reducing salinity in water sources.",
-        image: "/placeholder.svg?height=200&width=300&text=Salt+Removal+Plant",
+        image: "images/services/water-treatment-plant/saline.png",
       },
       {
         title: "Automatic Bottle Filling Plant",
         description: "Automated systems for efficient and hygienic filling of water bottles.",
-        image: "/placeholder.svg?height=200&width=300&text=Bottle+Filling+Plant",
+        image: "images/services/water-treatment-plant/Upscaled-2X-automatic-rinsing-filling-capping-machine-1000x1000.jpg",
       },
       {
         title: "Battery Water Plant",
         description: "Specialized systems producing purified water for battery maintenance and manufacturing.",
-        image: "/placeholder.svg?height=200&width=300&text=Battery+Water+Plant",
+        image: "images/services/water-treatment-plant/battery-water-plant-1000x1000.webp",
       },
       {
         title: "Dialysis Water Plant",
         description: "High-purity water treatment systems specifically designed for medical dialysis applications.",
-        image: "/placeholder.svg?height=200&width=300&text=Dialysis+Water+Plant",
+        image: "images/services/water-treatment-plant/dialysis-product-jpeg-1000x1000.webp",
       },
     ],
     etp: [
@@ -85,77 +79,77 @@ export default function ServicesSection() {
         title: "Effluent Treatment Plant (ETP)",
         description:
           "Comprehensive systems for treating industrial wastewater before discharge, ensuring environmental compliance.",
-        image: "/placeholder.svg?height=200&width=300&text=ETP+System",
+        image: "images/services/waste-water-system/ETP-STP-1-770x499.webp",
       },
       {
         title: "Sewage Treatment Plant (STP)",
         description: "Systems designed to treat domestic and commercial sewage for safe disposal or reuse.",
-        image: "/placeholder.svg?height=200&width=300&text=STP+System",
+        image: "images/services/waste-water-system/sewage-treatment-plant-stp-1000x1000.webp",
       },
       {
         title: "Zero Liquid Discharge Plant (ZLDP)",
         description:
           "Advanced systems that eliminate liquid waste discharge, recovering water and valuable byproducts.",
-        image: "/placeholder.svg?height=200&width=300&text=Zero+Liquid+Discharge",
+        image: "images/services/waste-water-system/Untitled-design-2024-02-28T135637.448.png",
       },
       {
         title: "Portable STP",
         description: "Compact, mobile sewage treatment solutions for temporary or remote locations.",
-        image: "/placeholder.svg?height=200&width=300&text=Portable+STP",
+        image: "images/services/waste-water-system/portable-sewage-treatment-plant-stp-1000x1000.jpg",
       },
     ],
     manufacturing: [
       {
         title: "3D CAD Design",
         description: "Professional 3D design services for product development and manufacturing.",
-        image: "/placeholder.svg?height=200&width=300&text=3D+CAD+Design",
+        image: "images/services/Manufracturing/3d-cad-design.jpeg",
       },
       {
         title: "3D Printing & Prototyping",
         description: "Rapid prototyping services to bring your designs to life quickly and efficiently.",
-        image: "/placeholder.svg?height=200&width=300&text=3D+Printing",
+        image: "images/services/Manufracturing/D-Printed-Filters-Capsules-Without-Activated-Carbon-A-The-original-design-left-and.ppm",
       },
       {
         title: "CNC Machining",
         description: "Precision manufacturing services using computer-controlled cutting machines.",
-        image: "/placeholder.svg?height=200&width=300&text=CNC+Machining",
+        image: "images/services/Manufracturing/KMT-WATERJET-CUTTING-TABLE-ICON-1-1024x788.webp",
       },
       {
         title: "Mold & Die",
         description: "Custom mold and die design and manufacturing for various industrial applications.",
-        image: "/placeholder.svg?height=200&width=300&text=Mold+and+Die",
+        image: "images/services/Manufracturing/Water-Purifier-Mould.jpg.webp",
       },
       {
         title: "Plastic Injection Molding",
         description: "Manufacturing services for plastic components with precision and quality.",
-        image: "/placeholder.svg?height=200&width=300&text=Injection+Molding",
+        image: "images/services/Manufracturing/Clear-plastic-parts-created-by-injection-molding-process.webp",
       },
     ],
     chemicals: [
       {
         title: "Anti-Scaling Chemical",
         description: "Specialized chemicals to prevent scale buildup in water treatment systems and pipelines.",
-        image: "/placeholder.svg?height=200&width=300&text=Anti-Scaling+Chemical",
+        image: "images/services/Chemical/puredrop-anti-scaling-dosing-chemical-500x500.jpg",
       },
       {
         title: "Anti-Silica Chemical",
         description: "Chemicals designed to control silica levels in water treatment processes.",
-        image: "/placeholder.svg?height=200&width=300&text=Anti-Silica+Chemical",
+        image: "images/services/Chemical/precipitated-silica-1000x1000.webp",
       },
       {
         title: "CIP Chemical",
         description: "Clean-in-place chemicals for efficient cleaning and maintenance of water treatment equipment.",
-        image: "/placeholder.svg?height=200&width=300&text=CIP+Chemical",
+        image: "images/services/Chemical/CIP 200 55 gallon 668 784.jpg",
       },
       {
         title: "ETP Chemical",
         description: "Specialized chemicals for enhancing the efficiency of effluent treatment processes.",
-        image: "/placeholder.svg?height=200&width=300&text=ETP+Chemical",
+        image: "images/services/Chemical/Upscaled-2X-etp-chemicals-1000x1000.jpg",
       },
       {
         title: "Boiler Dosing Chemical",
         description: "Chemicals for treating boiler water to prevent corrosion, scaling, and improve efficiency.",
-        image: "/placeholder.svg?height=200&width=300&text=Boiler+Chemical",
+        image: "images/services/Chemical/1010837.jpg",
       },
     ],
   }
