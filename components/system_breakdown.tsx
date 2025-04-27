@@ -7,6 +7,7 @@ import AnimatedSection from "./animated-section"
 import { useState, useEffect, useRef } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Description } from "@radix-ui/react-toast"
 
 export default function System_breakdown() {
   const [activeTab, setActiveTab] = useState("drinking")
@@ -18,158 +19,106 @@ export default function System_breakdown() {
   const serviceItems = {
     drinking: [
       {
-        title: "Household & Domestic Water Purifier",
-        description: "Compact and efficient water purifiers for home use, ensuring clean and safe drinking water.",
-        image: "images/services/drinking-water-purifier/drinking-water-purifier-1.png",      },
+        title: "PURICOM CE2",
+        image: "images/units/purification-system/11.png",     
+      },  {
+        title: "EASY PURE",
+        image: "images/units/purification-system/10.png",     
+      },
       {
-        title: "Central Drinking Water Purifier",
-        description: "Centralized water purification systems for buildings, offices, and commercial spaces.",
-        image: "images/services/drinking-water-purifier/Central-drinking-water.png",
+        title: "AQUA",
+        image: "images/units/purification-system/12.png",     
+      },
+      {
+        title: "PURICOM CMW-R3",
+        image: "images/units/purification-system/13.png",     
+      },
+      {
+        title: "SUERSIBLE FILTER",
+        image: "images/units/purification-system/14.png",     
+      },
+      {
+        title: "I-RO",
+        image: "images/units/purification-system/15.png",     
+      },
+      {
+        title: "KIWI",
+        image: "images/units/purification-system/16.png",     
+      },
+      {
+        title: "KIWI",
+        image: "images/units/purification-system/17.png",     
+      },
+      {
+        title: "COMMERCIAL RO",
+        image: "images/units/purification-system/18.png",     
+      },
+      {
+        title: "HERON",
+        image: "images/units/purification-system/19.png",     
       }
+ 
     ],
     spare: [
       {
-        title: "Reverse Osmosis (RO) Plant",
-        description: "Advanced RO systems for removing contaminants and providing pure water for various applications.",
-        image: "images/services/water-treatment-plant/02 iRO tank & tap.png",
+        title: "PP Cartridge Filter",
+        image: "images/units/spare/33.png",     
       },
       {
-        title: "Iron Removal Plant (IRP)",
-        description: "Specialized systems for removing iron and related contaminants from water sources.",
-        image: "images/services/water-treatment-plant/Iron-Removal-Plant.webp",
-      }
+        title: "GAC Filter",
+        image: "images/units/spare/Upscaled-2X-40.png",     
+      },
+      {
+        title: "Housing Keys",
+        image: "images/units/spare/Upscaled-2X-41.png",     
+      },
+      {
+        title: "Alkaline Filter",
+        image: "images/units/spare/Upscaled-2X-32.png",     
+      },
+      {
+        title: "UV Filter",
+        image: "images/units/spare/Upscaled-2X-34.png",     
+      },
+      {
+        title: "RO Membrance",
+        image: "images/units/spare/Upscaled-2X-35.png",     
+      },
+      {
+        title: "NET Carbon",
+        image: "images/units/spare/Upscaled-2X-36.png",     
+      },
+      {
+        title: "Mineralized Filter",
+        image: "images/units/spare/Upscaled-2X-31.png",     
+      },
+      {
+        title: "Reserve Tank",
+        image: "images/units/spare/Upscaled-2X-37.png",     
+      },
+      {
+        title: "Fittings",
+        image: "images/units/spare/Upscaled-2X-39.png",     
+      },
+      {
+        title: "Diaphragm Pump",
+        image: "images/units/spare/Upscaled-2X-38.png",     
+      },
     ],
     wtp: [
-      {
-        title: "Effluent Treatment Plant (ETP)",
-        description:
-          "Comprehensive systems for treating industrial wastewater before discharge, ensuring environmental compliance.",
-        image: "images/services/waste-water-system/ETP-STP-1-770x499.webp",
-      },
-      {
-        title: "Sewage Treatment Plant (STP)",
-        description: "Systems designed to treat domestic and commercial sewage for safe disposal or reuse.",
-        image: "images/services/waste-water-system/sewage-treatment-plant-stp-1000x1000.webp",
-      },
-      {
-        title: "Zero Liquid Discharge Plant (ZLDP)",
-        description:
-          "Advanced systems that eliminate liquid waste discharge, recovering water and valuable byproducts.",
-        image: "images/services/waste-water-system/Untitled-design-2024-02-28T135637.448.png",
-      },
-      {
-        title: "Portable STP",
-        description: "Compact, mobile sewage treatment solutions for temporary or remote locations.",
-        image: "images/services/waste-water-system/portable-sewage-treatment-plant-stp-1000x1000.jpg",
-      },
+      
     ],
     ro: [
-      {
-        title: "3D CAD Design",
-        description: "Professional 3D design services for product development and manufacturing.",
-        image: "images/services/Manufracturing/3d-cad-design.jpeg",
-      },
-      {
-        title: "3D Printing & Prototyping",
-        description: "Rapid prototyping services to bring your designs to life quickly and efficiently.",
-        image: "images/services/Manufracturing/D-Printed-Filters-Capsules-Without-Activated-Carbon-A-The-original-design-left-and.ppm",
-      },
-      {
-        title: "CNC Machining",
-        description: "Precision manufacturing services using computer-controlled cutting machines.",
-        image: "images/services/Manufracturing/KMT-WATERJET-CUTTING-TABLE-ICON-1-1024x788.webp",
-      },
-      {
-        title: "Mold & Die",
-        description: "Custom mold and die design and manufacturing for various industrial applications.",
-        image: "images/services/Manufracturing/Water-Purifier-Mould.jpg.webp",
-      },
-      {
-        title: "Plastic Injection Molding",
-        description: "Manufacturing services for plastic components with precision and quality.",
-        image: "images/services/Manufracturing/Clear-plastic-parts-created-by-injection-molding-process.webp",
-      },
+      
     ],
     media: [
-      {
-        title: "Anti-Scaling Chemical",
-        description: "Specialized chemicals to prevent scale buildup in water treatment systems and pipelines.",
-        image: "images/services/Chemical/puredrop-anti-scaling-dosing-chemical-500x500.jpg",
-      },
-      {
-        title: "Anti-Silica Chemical",
-        description: "Chemicals designed to control silica levels in water treatment processes.",
-        image: "images/services/Chemical/precipitated-silica-1000x1000.webp",
-      },
-      {
-        title: "CIP Chemical",
-        description: "Clean-in-place chemicals for efficient cleaning and maintenance of water treatment equipment.",
-        image: "images/services/Chemical/CIP 200 55 gallon 668 784.jpg",
-      },
-      {
-        title: "ETP Chemical",
-        description: "Specialized chemicals for enhancing the efficiency of effluent treatment processes.",
-        image: "images/services/Chemical/Upscaled-2X-etp-chemicals-1000x1000.jpg",
-      },
-      {
-        title: "Boiler Dosing Chemical",
-        description: "Chemicals for treating boiler water to prevent corrosion, scaling, and improve efficiency.",
-        image: "images/services/Chemical/1010837.jpg",
-      },
+      
     ],
     dm: [
-      {
-        title: "Anti-Scaling Chemical",
-        description: "Specialized chemicals to prevent scale buildup in water treatment systems and pipelines.",
-        image: "images/services/Chemical/puredrop-anti-scaling-dosing-chemical-500x500.jpg",
-      },
-      {
-        title: "Anti-Silica Chemical",
-        description: "Chemicals designed to control silica levels in water treatment processes.",
-        image: "images/services/Chemical/precipitated-silica-1000x1000.webp",
-      },
-      {
-        title: "CIP Chemical",
-        description: "Clean-in-place chemicals for efficient cleaning and maintenance of water treatment equipment.",
-        image: "images/services/Chemical/CIP 200 55 gallon 668 784.jpg",
-      },
-      {
-        title: "ETP Chemical",
-        description: "Specialized chemicals for enhancing the efficiency of effluent treatment processes.",
-        image: "images/services/Chemical/Upscaled-2X-etp-chemicals-1000x1000.jpg",
-      },
-      {
-        title: "Boiler Dosing Chemical",
-        description: "Chemicals for treating boiler water to prevent corrosion, scaling, and improve efficiency.",
-        image: "images/services/Chemical/1010837.jpg",
-      },
+     
     ],
     etp: [
-      {
-        title: "Anti-Scaling Chemical",
-        description: "Specialized chemicals to prevent scale buildup in water treatment systems and pipelines.",
-        image: "images/services/Chemical/puredrop-anti-scaling-dosing-chemical-500x500.jpg",
-      },
-      {
-        title: "Anti-Silica Chemical",
-        description: "Chemicals designed to control silica levels in water treatment processes.",
-        image: "images/services/Chemical/precipitated-silica-1000x1000.webp",
-      },
-      {
-        title: "CIP Chemical",
-        description: "Clean-in-place chemicals for efficient cleaning and maintenance of water treatment equipment.",
-        image: "images/services/Chemical/CIP 200 55 gallon 668 784.jpg",
-      },
-      {
-        title: "ETP Chemical",
-        description: "Specialized chemicals for enhancing the efficiency of effluent treatment processes.",
-        image: "images/services/Chemical/Upscaled-2X-etp-chemicals-1000x1000.jpg",
-      },
-      {
-        title: "Boiler Dosing Chemical",
-        description: "Chemicals for treating boiler water to prevent corrosion, scaling, and improve efficiency.",
-        image: "images/services/Chemical/1010837.jpg",
-      },
+   
     ],
   }
 
