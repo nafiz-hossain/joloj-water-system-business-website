@@ -3,6 +3,11 @@
 # dependencies
 /node_modules
 
+
+# Ignore README.md for deployment
+README.md
+
+
 # next.js
 /.next/
 /out/

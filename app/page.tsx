@@ -5,6 +5,7 @@ import ProjectsSection from "@/components/projects-section"
 import ClientsSection from "@/components/clients-section"
 import ContactSection from "@/components/contact-section"
 import WhyChooseSection from "@/components/why-choose-section"
+import System_breakdown from "@/components/system_breakdown"
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <AboutSection />
       <ServicesSection />
       <WhyChooseSection />
+      <System_breakdown />
       <ProjectsSection />
       <ClientsSection />
       <ContactSection />
