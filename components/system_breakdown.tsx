@@ -16,7 +16,7 @@ export default function System_breakdown() {
   const containerRefs = useRef<Record<string, HTMLDivElement | null>>({})
 
   // Service items for each category with image paths
-  const serviceItems = {
+  const parts_item = {
     drinking: [
       {
         title: "PURICOM CE2",
@@ -106,13 +106,134 @@ export default function System_breakdown() {
       },
     ],
     wtp: [
-      
+      {
+        title: "FRP Vessel",
+        image: "images/units/wtp/42.png",     
+      },
+      {
+        title: "MS Vessel",
+        image: "images/units/wtp/43.png",     
+      },
+      {
+        title: "SS Vessel",
+        image: "images/units/wtp/44.png",     
+      },
+      {
+        title: "SS Tank",
+        image: "images/units/wtp/45.png",     
+      },
+      {
+        title: "Dosing Pump",
+        image: "images/units/wtp/46.png",     
+      },
+      {
+        title: "Flow Meter",
+        image: "images/units/wtp/47.png",     
+      },
+      {
+        title: "Conductivity Monitor",
+        image: "images/units/wtp/48.png",     
+      },
+      {
+        title: "20 in Jumbo Filter",
+        image: "images/units/wtp/49.png",     
+      },
+      {
+        title: "Pressure Gauge",
+        image: "images/units/wtp/50.png",     
+      },
+      {
+        title: "Multiport Valves",
+        image: "images/units/wtp/60.gif",     
+      },
+      {
+        title: "Micron Filter",
+        image: "images/units/wtp/52.png",     
+      },
+      {
+        title: "UV Light",
+        image: "images/units/wtp/54.png",     
+      },
+      {
+        title: "Streiners",
+        image: "images/units/wtp/55.png",     
+      },
     ],
     ro: [
-      
+      {
+        title: "Solinoid Valve",
+        image: "images/units/ro/59.png",     
+      },  {
+        title: "Multistage Pump",
+        image: "images/units/ro/60.png",     
+      },
+      {
+        title: "RO Controller",
+        image: "images/units/ro/61.png",     
+      },
+      {
+        title: "RO Membranes",
+        image: "images/units/ro/65.png",     
+      },
+      {
+        title: "Membrance Housing FRP",
+        image: "images/units/ro/62.png",     
+      },
+      {
+        title: "Membrance Housing SS",
+        image: "images/units/ro/64.png",     
+      },
+      {
+        title: "250LPH RO Plant",
+        image: "images/units/ro/68.png",     
+      },
+      {
+        title: "RO System 500LPH",
+        image: "images/units/ro/69.png",     
+      },
+      {
+        title: "RO Machine 4000 LPH",
+        image: "images/units/ro/67.png",     
+      },
+      {
+        title: "RO system 8000 LPH",
+        image: "images/units/ro/63.png",     
+      },      
+      {
+        title: "RO System 12000LPH",
+        image: "images/units/ro/66.png",     
+      }
+ 
     ],
     media: [
-      
+      {
+        title: "Activated Carbon",
+        image: "images/media/73.png",     
+      },
+      {
+        title: "Mixed Bed Resin",
+        image: "images/media/74.png",     
+      },
+      {
+        title: "Gravels & Pebbles",
+        image: "images/media/75.png",     
+      },
+      {
+        title: "Iron Exchange Resin",
+        image: "images/media/70.png",     
+      },
+      {
+        title: "Manganese Sand",
+        image: "images/media/76.png",     
+      },
+      {
+        title: "DMI-65",
+        image: "images/media/77.png",     
+      },
+      {
+        title: "Anion Resin",
+        image: "images/media/78.png",     
+      }
     ],
     dm: [
      
@@ -144,7 +265,7 @@ export default function System_breakdown() {
 
   // Set up scroll event listeners
   useEffect(() => {
-    const categories = Object.keys(serviceItems)
+    const categories = Object.keys(parts_item)
 
     // Initial check for all categories
     categories.forEach((category) => {
@@ -212,7 +333,7 @@ export default function System_breakdown() {
             </TabsList>
           </AnimatedSection>
 
-          {Object.entries(serviceItems).map(([category, items]) => (
+          {Object.entries(parts_item).map(([category, items]) => (
             <TabsContent key={category} value={category} className="space-y-8">
               <div className="relative">
                 {showLeftArrow[category] && (
