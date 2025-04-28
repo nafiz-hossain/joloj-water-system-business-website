@@ -236,10 +236,76 @@ export default function System_breakdown() {
       }
     ],
     dm: [
-     
+      {
+        title: "5-7 LPH DM Plant",
+        image: "images/dm/80.gif",     
+      },
+      {
+        title: "EDI Water Plant",
+        image: "images/dm/72.png",     
+      }
     ],
     etp: [
-   
+      {
+        title: "BELT-OIL SKIMMER",
+        image: "images/etp/82.png",
+        description: "CAP: 10-200 m3/hr"     
+      },
+      {
+        title: "BAR SCREEN",
+        image: "images/etp/85.png",
+        description: "CAP: 80-500 m3/hr"     
+      },
+      {
+        title: "NON CLOG SELF PRIMMING PUMP",
+        image: "images/etp/84.png",
+        description: "CAP: 5-200 m3/hr, KGEN Series"     
+      },
+      {
+        title: "FILTER PRESS",
+        image: "images/etp/81.png",
+        description: "Quick dry sludge making unit"     
+      },
+      {
+        title: "SCREW PRESS",
+        image: "images/etp/83.png",
+        description: "Quick dry sludge making unit"     
+      },
+      {
+        title: "AIR BLOWER",
+        image: "images/etp/86.png",
+        description: "Minimum Vibration & Low Noise, CAP: 50-7000 m3/hr"     
+      },
+      {
+        title: "ELECTRO MAGNETIC FLOW METER",
+        image: "images/etp/89.png",
+        description: "CAP: 10-1000 m3 /hr"     
+      },
+      {
+        title: "DRUM SCREEN",
+        image: "images/etp/91.png",
+        description: "CAP: 50-500 m3/hr"     
+      },
+      {
+        title: "SLUDGE PUMP",
+        image: "images/etp/92.png",
+        description: "CAP: 30 rpm to 150 rpm"     
+      },
+      {
+        title: "DISK TYPE DIFFUSER (FINE BUBBLE)",
+        image: "images/etp/90.png",
+        description: "CAP: 1.2-7.2 m3 /hr"     
+      },
+      {
+        title: "COARSE BUBBLE DIFFUSER",
+        image: "images/etp/87.png",
+        description: "CAP: 1.2-7.2 m3 /hr"     
+      },
+      {
+        title: "TUBE TYPE DIFFUSER",
+        image: "images/etp/88.png",
+        description: "LTF 1000 (Diameter 64mm*3/4 in PT) Length 1000 mm, CAP: 290-440 L/M"     
+      }
     ],
   }
 
