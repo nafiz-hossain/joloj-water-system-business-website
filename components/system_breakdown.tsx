@@ -9,7 +9,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Description } from "@radix-ui/react-toast"
 
-export default function OurProducts() {
+export default function System_breakdown() {
   const [activeTab, setActiveTab] = useState("drinking")
   const [showLeftArrow, setShowLeftArrow] = useState<Record<string, boolean>>({})
   const [showRightArrow, setShowRightArrow] = useState<Record<string, boolean>>({})
