@@ -39,15 +39,15 @@ export default function Navbar() {
             <Image
               src="/images/logo.png"
               alt="JOLOJ Water Systems Logo"
-              width={160}
-              height={48}
+              width={100}
+              height={18}
               className="transition-all duration-300 hover:opacity-90"
               priority
             />
           </div>
         </Link>
         <nav className="hidden md:flex gap-6">
-          {["Home", "About", "Services", "Projects", "Contact"].map((item, index) => (
+          {["Home", "About",  "Products" ,"Services","Projects", "Contact"].map((item, index) => (
             <Link
               key={item}
               href={item === "Home" ? "/" : `#${item.toLowerCase()}`}

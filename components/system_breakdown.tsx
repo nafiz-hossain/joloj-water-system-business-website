@@ -9,7 +9,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Description } from "@radix-ui/react-toast"
 
-export default function System_breakdown() {
+export default function OurProducts() {
   const [activeTab, setActiveTab] = useState("drinking")
   const [showLeftArrow, setShowLeftArrow] = useState<Record<string, boolean>>({})
   const [showRightArrow, setShowRightArrow] = useState<Record<string, boolean>>({})
@@ -373,11 +373,11 @@ export default function System_breakdown() {
   }
 
   return (
-    <section id="services" className="py-16 md:py-24 bg-white">
+    <section id="products" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
         <AnimatedSection>
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">DRINKING WATER PURIFICATION SYSTEM</h2>
+            <h2 className="text-3xl font-bold mb-4">Our Products</h2>
 
           </div>
         </AnimatedSection>
@@ -385,7 +385,7 @@ export default function System_breakdown() {
         <Tabs defaultValue="drinking" className="w-full" onValueChange={setActiveTab}>
           <AnimatedSection delay={200}>
             <TabsList className="grid grid-cols-2 md:grid-cols-7 mb-8">
-              <TabsTrigger value="drinking">Water Filtration UNITS</TabsTrigger>
+              <TabsTrigger value="drinking">Drinking Water Filters</TabsTrigger>
               <TabsTrigger value="spare">Spare PARTS</TabsTrigger>
               <TabsTrigger value="wtp">Water Treatment Plant</TabsTrigger>
               <TabsTrigger value="ro">RO Systems</TabsTrigger>

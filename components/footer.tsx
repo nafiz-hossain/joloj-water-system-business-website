@@ -28,10 +28,16 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="#products" className="text-sky-100 hover:text-white transition-colors">
+                  Products
+                </Link>
+              </li>
+              <li>
                 <Link href="#services" className="text-sky-100 hover:text-white transition-colors">
                   Services
                 </Link>
               </li>
+
               <li>
                 <Link href="#projects" className="text-sky-100 hover:text-white transition-colors">
                   Projects

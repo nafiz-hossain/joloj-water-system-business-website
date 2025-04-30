@@ -12,10 +12,13 @@ export default function Home() {
     <main className="flex min-h-screen flex-col">
       <HeroSection />
       <AboutSection />
+      <System_breakdown />
+
+
       <ServicesSection />
       <WhyChooseSection />
-      <System_breakdown />
       <ProjectsSection />
+
       <ClientsSection />
       <ContactSection />
     </main>
