@@ -18,13 +18,13 @@ export default function ServicesSection() {
   const serviceItems = {
     drinking: [
       {
-        title: "Household & Domestic Water Purifier",
+        title: "Household & Domestic Water Purifier Maintenance",
         description: "Compact and efficient water purifiers for home use, ensuring clean and safe drinking water.",
-        image: "images/services/drinking-water-purifier/drinking-water-purifier-1.png",      },
+        image: "images/services/drinking-water-purifier/ezgif.com-resize_2.gif",      },
       {
-        title: "Central Drinking Water Purifier",
+        title: "Central Drinking Water Purifier Maintenance",
         description: "Centralized water purification systems for buildings, offices, and commercial spaces.",
-        image: "images/services/drinking-water-purifier/Central-drinking-water.png",
+        image: "images/services/drinking-water-purifier/ezgif.com-resize.gif",
       }
     ],
     wtp: [
