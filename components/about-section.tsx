@@ -40,7 +40,7 @@ export default function AboutSection() {
           <AnimatedSection direction="right" delay={300}>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-[1.03] hover:shadow-xl">
               <Image
-                src="images/Front/front-2.jpg"
+                src="images/mission.jpeg"
                 alt="JOLOJ Water Systems Facility"
                 fill
                 className="object-cover"
