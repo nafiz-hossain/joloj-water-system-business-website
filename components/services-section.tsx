@@ -31,7 +31,7 @@ export default function ServicesSection() {
       {
         title: "Reverse Osmosis (RO) Plant",
         description: "Advanced RO systems for removing contaminants and providing pure water for various applications.",
-        image: "images/services/water-treatment-plant/02 iRO tank & tap.png",
+        image: "images/services/water-treatment-plant/RO-plant-10000lph.jpg",
       },
       {
         title: "Iron Removal Plant (IRP)",
@@ -233,9 +233,9 @@ export default function ServicesSection() {
         <Tabs defaultValue="drinking" className="w-full" onValueChange={setActiveTab}>
           <AnimatedSection delay={200}>
             <TabsList className="grid grid-cols-2 md:grid-cols-5 mb-8">
-              <TabsTrigger value="drinking">Drinking Water Purifiers</TabsTrigger>
-              <TabsTrigger value="wtp">Water Treatment Plant</TabsTrigger>
-              <TabsTrigger value="etp">Waste Water Treatment</TabsTrigger>
+              <TabsTrigger value="drinking">Drinking Water Purifiers Maintenance</TabsTrigger>
+              <TabsTrigger value="wtp">WTP Maintenance</TabsTrigger>
+              <TabsTrigger value="etp">ETP & STP Maintenance</TabsTrigger>
               <TabsTrigger value="manufacturing">Manufacturing Consultancy</TabsTrigger>
               <TabsTrigger value="chemicals">Chemicals</TabsTrigger>
             </TabsList>

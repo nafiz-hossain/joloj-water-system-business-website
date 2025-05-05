@@ -9,17 +9,17 @@ export default function ProjectsSection() {
       image: "images/projects/93.jpg",
     },
     {
-      title: "Commercial Purification System",
+      title: "Community Drinking Water Plant",
       location: "Chittagong, Bangladesh",
       image: "images/projects/94.jpg",
     },
     {
-      title: "Textile Industry ETP",
+      title: "Beverage Industry WTP",
       location: "Narayanganj, Bangladesh",
       image: "images/projects/95.jpg",
     },
     {
-      title: "Residential Complex STP",
+      title: "Industrial RO Plant",
       location: "Sylhet, Bangladesh",
       image: "images/projects/96.jpg",
     },
@@ -29,7 +29,7 @@ export default function ProjectsSection() {
       image: "images/projects/97.jpg",
     },
     {
-      title: "Hospital Iron Removal Plant",
+      title: "Textile Industry WTP",
       location: "Rajshahi, Bangladesh",
       image: "images/projects/98.jpg",
     },
@@ -60,7 +60,7 @@ export default function ProjectsSection() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                     <div className="p-4 text-white w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                      <h3 className="font-semibold text-lg">{project.title}</h3>
+                      {/* <h3 className="font-semibold text-lg">{project.title}</h3> */}
                       {/* <p className="text-sky-100">{project.location}</p> */}
                     </div>
                   </div>
