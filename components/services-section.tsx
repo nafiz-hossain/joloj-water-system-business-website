@@ -231,15 +231,21 @@ export default function ServicesSection() {
         </AnimatedSection>
 
         <Tabs defaultValue="drinking" className="w-full" onValueChange={setActiveTab}>
-          <AnimatedSection delay={200}>
-            <TabsList className="grid grid-cols-2 md:grid-cols-5 mb-8">
-              <TabsTrigger value="drinking">Drinking Water Purifiers Maintenance</TabsTrigger>
-              <TabsTrigger value="wtp">WTP Maintenance</TabsTrigger>
-              <TabsTrigger value="etp">ETP & STP Maintenance</TabsTrigger>
-              <TabsTrigger value="manufacturing">Manufacturing Consultancy</TabsTrigger>
-              <TabsTrigger value="chemicals">Chemicals</TabsTrigger>
-            </TabsList>
-          </AnimatedSection>
+        <AnimatedSection delay={200}>
+  <div className="relative">
+    <div className="overflow-x-auto scrollbar-hide">
+      <TabsList className="flex gap-2 min-w-max mb-8">
+        <TabsTrigger value="drinking">Drinking Water Purifiers Maintenance</TabsTrigger>
+        <TabsTrigger value="wtp">WTP Maintenance</TabsTrigger>
+        <TabsTrigger value="etp">ETP & STP Maintenance</TabsTrigger>
+        <TabsTrigger value="manufacturing">Manufacturing Consultancy</TabsTrigger>
+        <TabsTrigger value="chemicals">Chemicals</TabsTrigger>
+      </TabsList>
+    </div>
+    {/* Optional fading edge effect (right side) */}
+    <div className="absolute top-0 right-0 h-full w-6 bg-gradient-to-l from-white pointer-events-none" />
+  </div>
+</AnimatedSection>
 
           {Object.entries(serviceItems).map(([category, items]) => (
             <TabsContent key={category} value={category} className="space-y-8">

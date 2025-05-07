@@ -383,21 +383,23 @@ export default function System_breakdown() {
         </AnimatedSection>
 
         <Tabs defaultValue="drinking" className="w-full" onValueChange={setActiveTab}>
-          <AnimatedSection delay={200}>
-            <TabsList className="grid grid-cols-2 md:grid-cols-7 mb-8">
-              <TabsTrigger value="drinking">Drinking Water Filters</TabsTrigger>
-              <TabsTrigger value="spare">Spare PARTS</TabsTrigger>
-              <TabsTrigger value="wtp">Water Treatment Plant</TabsTrigger>
-              <TabsTrigger value="ro">RO Systems</TabsTrigger>
-              <TabsTrigger value="media">Treatment Media</TabsTrigger>
-              <TabsTrigger value="dm">DM Plant</TabsTrigger>
-              <TabsTrigger value="etp">ETP Plant</TabsTrigger>
-
-
-
-
-            </TabsList>
-          </AnimatedSection>
+        <AnimatedSection delay={200}>
+    <div className="relative">
+      <div className="overflow-x-auto scrollbar-hide">
+        <TabsList className="flex gap-2 min-w-max mb-8">
+          <TabsTrigger value="drinking">Drinking Water Filters</TabsTrigger>
+          <TabsTrigger value="spare">Spare PARTS</TabsTrigger>
+          <TabsTrigger value="wtp">Water Treatment Plant</TabsTrigger>
+          <TabsTrigger value="ro">RO Systems</TabsTrigger>
+          <TabsTrigger value="media">Treatment Media</TabsTrigger>
+          <TabsTrigger value="dm">DM Plant</TabsTrigger>
+          <TabsTrigger value="etp">ETP Plant</TabsTrigger>
+        </TabsList>
+      </div>
+      {/* Fading effect on the right side */}
+      <div className="absolute top-0 right-0 h-full w-6 bg-gradient-to-l from-white pointer-events-none" />
+    </div>
+  </AnimatedSection>
 
           {Object.entries(parts_item).map(([category, items]) => (
             <TabsContent key={category} value={category} className="space-y-8">
