@@ -72,7 +72,7 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden container mx-auto px-4 pb-4 pt-2 bg-white">
           <nav className="flex flex-col gap-4">
-            {["Home", "About", "Services", "Projects", "Contact"].map((item, index) => (
+            {["Home", "About", "Products","Services", "Projects", "Contact"].map((item, index) => (
               <Link
                 key={item}
                 href={item === "Home" ? "/" : `#${item.toLowerCase()}`}
